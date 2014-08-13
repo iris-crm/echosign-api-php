@@ -2,6 +2,12 @@
     "name": "danielsan/echosign-api-php",
     "description": "Adobe EchoSign PHP Api Implementation",
     "license": "MIT",
+    "keywords": ["echosign"],
+
+    "autoload": {
+        "psr-0": { "EchoSign": "lib/" }
+    },
+
     "authors": [
         {
             "name": "Daniel Santana",
@@ -9,5 +15,8 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.3",
+        "ext-soap": "*"
+    }
 }
