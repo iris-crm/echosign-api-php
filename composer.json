@@ -1,0 +1,13 @@
+{
+    "name": "danielsan/echosign-api-php",
+    "description": "Adobe EchoSign PHP Api Implementation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Santana",
+            "email": "daniel@everymundo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
