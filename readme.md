@@ -7,8 +7,15 @@ This PHP library wraps Adobe's EchoSign API, currently at Version 15. The librar
 * PHP 5.3
 * SOAP module
 
-##Version 0.1
+##Version 1.0.0
 This is currently a development library, not fully tested for production use
+
+##Instalation
+
+    composer require danielsan/echosign-api-php
+    Please provide a version constraint for the danielsan/echosign-api-php requirement: 1.0.0
+
+ Don't forget to include vendor/autoload.php to use it
 
 ##Usage
 
