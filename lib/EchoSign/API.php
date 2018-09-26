@@ -16,7 +16,7 @@
     
     class API{
         
-        static protected $wsdl = 'https://secure.echosign.com/services/EchoSignDocumentService15?wsdl';
+        static protected $wsdl = 'https://secure.na1.echosign.com/services/EchoSignDocumentService22?wsdl';
         protected $client;
         protected $api_key;
         

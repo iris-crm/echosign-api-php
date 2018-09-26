@@ -7,7 +7,9 @@
         
         protected $widget_completion_info;
         protected $widget_auth_failure_info;
-        
+        /** @var RecipientInfo */
+        protected $widget_counter_signers;
+
         function setWidgetCompletionInfo($url, $deframe = false, $delay = 0){
             
             if (!filter_var($url, FILTER_VALIDATE_URL)) {
@@ -43,6 +45,16 @@
         function getWidgetAuthFailureInfo(){
             return $this->widget_auth_failure_info;
         }
+
+        /**
+         * Set a list of additional signers
+         *
+         * @param \EchoSign\Info\RecipientInfo $recipients The list of counter signers
+         */
+        public function setWidgetCounterSigners(RecipientInfo $recipients)
+        {
+            $this->widget_counter_signers = $recipients;
+        }
         
         function asArray(){
             
@@ -50,7 +62,8 @@
             
             $properties = array(                           
                             'widgetCompletionInfo' => $this->widget_completion_info,
-                            'widgetAuthFailureInfo' => $this->widget_auth_failure_info
+                            'widgetAuthFailureInfo' => $this->widget_auth_failure_info,
+                            'counterSigners' => $this->widget_counter_signers->asArray(),
                         );
             
             $properties = array_merge($inherited, $properties);
