@@ -1,6 +1,6 @@
 #Adobe EchoSign PHP API
 
-This PHP library wraps Adobe's EchoSign API, currently at Version 15. The library closely follows the documentation at https://secure.echosign.com/public/docs/EchoSignDocumentService22
+This PHP library wraps Adobe's EchoSign API, currently at Version 22. The library closely follows the documentation at https://secure.echosign.com/public/docs/EchoSignDocumentService22
 
 ##Requirements
 

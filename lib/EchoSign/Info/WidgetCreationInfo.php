@@ -63,7 +63,7 @@
             $properties = array(                           
                             'widgetCompletionInfo' => $this->widget_completion_info,
                             'widgetAuthFailureInfo' => $this->widget_auth_failure_info,
-                            'counterSigners' => $this->widget_counter_signers->asArray(),
+                            'counterSigners' => $this->widget_counter_signers,
                         );
             
             $properties = array_merge($inherited, $properties);
