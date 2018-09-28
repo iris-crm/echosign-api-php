@@ -7,7 +7,6 @@
         
         protected $widget_completion_info;
         protected $widget_auth_failure_info;
-        /** @var RecipientInfo */
         protected $widget_counter_signers;
 
         function setWidgetCompletionInfo($url, $deframe = false, $delay = 0){
@@ -53,7 +52,7 @@
          */
         public function setWidgetCounterSigners(RecipientInfo $recipients)
         {
-            $this->widget_counter_signers = $recipients;
+            $this->widget_counter_signers = $recipients->asArray();
         }
         
         function asArray(){
